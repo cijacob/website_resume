@@ -1,0 +1,75 @@
+html, body{
+	font-family: Alien League;
+    margin:0;
+    height: 100%;
+}
+#contact, #transversale, #main, a, #contenu{
+    /*border: 1px solid black; */
+}
+body{
+	background-color:lightgreen;
+    width: 100%;
+    margin:0;
+	display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+    
+}
+body>a{
+	font-size: 50px;
+	text-align: center;
+	text-decoration: none;    
+    /*background-color: aqua;*/
+    margin:5% 32%; 
+    padding: 1.5%;
+    position: absolute;
+    box-shadow:0 0 15px 5px black;
+    
+}
+.try1, .try2, .try3{
+    width: 15%;
+    height: 15%;
+    margin: 5px;
+    display: inline-block;
+    margin-top: 15%;
+    border-bottom:1px dotted;
+}
+#transversale{
+	background-color: #da766b;	
+	width: 10%;
+    box-shadow:0 0 15px 5px black;
+    font-size: 30px;
+    float:left;
+    /*vertical-align: middle;*/
+    padding: 0;
+    display: table-cell;
+    height: 100%;
+    overflow: hidden;
+}
+#transversale p {
+    display: table;
+    text-indent: 1em;
+    white-space: nowrap;
+    -webkit-transform:rotate(-90deg) translate(-135%,10%);
+        transform:rotate(-90deg) translate(-135%,10%);
+    -webkit-transform-origin:1.75em center;
+        transform-origin:1.75em center;
+}
+
+#contact{
+    margin:10px;
+    padding-bottom:1.5%;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    width: 500px;
+    height: 0.2%;
+      /* Rotate div */
+      -ms-transform: rotate(-35deg); /* IE 9 */
+      -webkit-transform: rotate(-35deg); /* Chrome, Safari, Opera */
+      transform: rotate(-35deg);
+    position:fixed;
+    bottom: 10%;
+    right:-120px;
+    text-align:center;
+    padding-top:0.5%;
+    background-color:#D1D1C3;
+}

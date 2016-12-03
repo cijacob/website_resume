@@ -1,0 +1,149 @@
+html{
+  margin:0;
+  padding: 0;
+  font-family: Alien League;
+  text-align: center;
+  border:1px solid yellow;
+  background-color: lightgreen;
+ }
+ #back{
+    margin-top:2%;
+    padding-top: 2%;
+    font-size: 40px; 
+    border: 1px solid blue; 
+}
+#contact {
+    width: 200px;
+    padding: 10px;
+    background:#2E3440; 
+    color: white; 
+    position:relative;
+    margin-top: 10px;
+    left: -240px; 
+    top: -60px;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid red;
+}
+footer{
+  margin-top:5%;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 15px;
+  box-shadow: -1px -2px 5px 1px rgba(0, 0, 0, 0.4);
+  background-image:linear-gradient(200deg, #D6D1D0, #2E3440);
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: middle;
+  border-top:0.5px solid #2E3440;
+
+}
+a{
+    text-decoration: none;
+}
+a:link {
+  	color: black;
+}
+a:visited {
+  	color: black;
+}
+
+#BackEnd, #FrontEnd, #Design, #About{
+    display: block;
+    background-color:white;
+    padding-top:12.5%;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    height: 20%;
+    width: 20%;
+    padding-bottom: 15%;
+    font-size: 110%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 5%;
+    margin-top: -40px;
+}
+#BackEnd{
+    border-bottom: 3px solid #da766b ;
+    border-right: 3px solid #da766b ;
+}
+#FrontEnd{
+    border-bottom:3px solid #656b81;
+    border-right:3px solid #656b81;
+}
+#Design{
+    border-bottom: 3px solid #d9bb62;
+    border-right: 3px solid  #d9bb62;
+}
+#About{
+    border-bottom: 3px solid #025c66;
+    border-right: 3px solid #025c66;
+}
+/* Recherche stage*/
+#contact {
+    width: 200px;
+    padding: 10px;
+    background:#2E3440; 
+    color: white; 
+    position:relative;
+    margin-top: 10px;
+    left: -240px; 
+    top: -60px;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    border-radius: 8px 8px 8px 8px;
+}
+#contact a.ouvrir , #contact a.fermer{
+    padding: 25px 25px;
+    background-color: #D6D1D0;
+    color: black;
+    position: absolute;
+    right: -78.5px;
+    top:30px;
+    /* quelques styles CSS3 */
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    border-radius: 0 0 8px 8px;
+}
+#contact:target {
+    left: 0;
+}
+#contact a.fermer {
+    display: none;
+}
+#contact:target a.ouvrir {
+    display: none;
+}
+#contact:target a.fermer {
+    display: block;
+}
+#contact_close:target #contact {
+  /* retourne à ta place */
+    left: -240px;
+}
+/*Lignes centrales*/
+#BackEnd>p:nth-child(2){
+    border-bottom: 2px solid #da766b;
+    display: inline-block;
+    padding:0 5px;
+}
+#FrontEnd>p:nth-child(2){
+    border-bottom: 2px solid #656b81;
+    display: inline-block;
+    padding:0 5px;
+}
+#Design>p:nth-child(2){
+    border-bottom: 2px solid #d9bb62;
+    display: inline-block;
+    padding:0 5px;
+}
+#About>p:nth-child(2){
+    border-bottom: 2px solid #025c66;
+    display: inline-block;
+    padding:0 5px;
+}

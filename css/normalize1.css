@@ -1,0 +1,154 @@
+		body{
+			font-family: Alien League;
+			background: -moz-linear-gradient(-25deg,  #025c66  25%, teal 100%); /* FF3.6+ */
+            	background: -webkit-linear-gradient(-25deg,  #025c66  25%, teal 100%);/*safari*/
+            		background: linear-gradient(-25deg,  #025c66  25%, teal 100%);
+			color:white;
+			margin: 0;
+			padding:0;
+		}
+		.wrap
+		{
+			font-family: Alien League;
+			font-size: 15px;
+			width:250px;
+			position:absolute;
+			top:30%;
+			left:50%;
+			vertical-align: middle;
+			/*margin: 10%;*/
+
+		}
+		div.wrap {
+
+  			width: 250px;
+  			position: relative;
+  			margin-top: 10%;
+  			/*margin-left: 1%;*/
+  			margin-bottom: 20%;
+  			transform: translate(-50%, -50%);
+                -webkit-transform: translate(-20%, -20%);
+                	transform:translate(-50%, -50%);
+  			vertical-align: middle;
+		}
+		div.wrap div{
+			position: relative;
+			margin: 25px 0;
+		}
+		#back{
+			font-size: 50px;
+			margin-top: 30px;
+			text-align: center;
+		}
+		img{
+  			vertical-align: middle;
+  			margin: 0;
+  			padding: 0;
+		}
+		label{
+			position:absolute;
+			top:0;
+			font-size:30px;
+			margin:10px;
+			padding: 0 10px;
+			background-color: none;
+			 -webkit-transition:top .2s ease-in-out,  font-size .2s ease-in-out;
+  			   transition: top .2s ease-in-out,  font-size .2s ease-in-out;
+		}
+		input[type=text]{
+  			width: 100%;
+  			padding: 20px;
+  			border: 1px solid white;
+  			font-size: 20px;
+  			background-color: teal;
+  			color: white;
+		}
+		
+		input[type=text]:focus {
+  			outline: none;
+		}
+		
+		a{
+			text-decoration: none;
+		}
+		a:link{
+			color:white; 
+		}
+		a:visited{
+			color:white;
+		}
+		.active {
+  			top: -30px;
+  			font-size: 20px;
+		}
+		footer{
+		  margin-top:20px;
+		  padding-top:0.1%;
+		  padding-bottom:0.1%;
+		  font-size: 15px;
+		  box-shadow: -1px -2px 5px 1px rgba(0, 0, 0, 0.4);
+		  background-image:linear-gradient(50deg, #e0d5b9, #2E3440);
+ 		  width: 100%;
+		  bottom: 0;
+		  position: fixed;
+		  text-align: center;
+		}		
+		button{
+			font-size:25px ;
+			color: #025c66;
+			box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+			width:120px;
+			height:40px;
+		}
+		#contact {
+		    width: 200px;
+		    padding: 10px;
+		    background:#2E3440; 
+		    color: white; 
+		    position:relative;
+		    margin-top: 10px;
+		    left: -230px; 
+		    top: -10px;
+		    -webkit-transition: all .5s ease-in;
+		    -moz-transition: all .5s ease-in;
+		    transition: all .5s ease-in;
+		    border-radius: 8px 8px 8px 8px;
+		}
+		#contact a.ouvrir , #contact a.fermer{
+		    padding: 30px 25px;
+		    background-color: #D6D1D0;
+		    color: black;
+		    position: absolute;
+		    right: -84px;
+		    top:30px;
+		    /* quelques styles CSS3 */
+		    -ms-transform: rotate(270deg);
+		    -moz-transform: rotate(270deg);
+		    -webkit-transform: rotate(270deg);
+		    transform: rotate(270deg);
+		    border-radius: 0 0 8px 8px;
+		}
+		#contact:target {
+    		left: 0;
+		}
+		#contact a.fermer {
+		    display: none;
+		}
+		#contact:target a.ouvrir {
+		    display: none;
+		}
+		#contact:target a.fermer {
+		    display: block;
+		}
+		#contact_close:target #contact {
+		  /* retourne à ta place */
+		    left: -230px;
+		}
+		#text{
+			margin-top:20%;
+			margin:10%;
+			border: 1px solid #333333; 
+			padding: 1%;
+			text-align: center;
+			box-shadow:0 0 25px 5px #333333;
+		}

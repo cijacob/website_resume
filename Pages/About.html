@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viexport" content="width=device-width, initial-squale =1.0"/>
+		<link rel="stylesheet" type="text/css" href="../css/normalize1.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		
+	</head>	
+	<body>
+		<div id="back"><a href="../index.html">Cindy Jacob</a></div>
+		<div id="contact">
+        	<p>
+          	A la recherche d'un stage</br><strong> du 11/04 au 20/05/16</strong></br>
+          	Motivée, curieuse, dynamique</br>
+          	Disponible immédiatement! 
+          	Plan Activa!
+        	</p>
+        	<a href="#contact" class="ouvrir" aria-hidden="true">Open !</a>
+        	<a href="#contact_close" class="fermer" aria-hidden="true">Close!</a>
+        </div>
+		<div class="wrap">
+				<form ACTION ="formMail.php" Method = "POST">
+					<div>
+						<label for="nom">Nom</label>
+						<input id="nom" type="Text" name="nom" class="cool"/>
+					</div>
+					<!--<div>
+						<label for="statut">Statut</label>
+						<input id="fname" type="Text" name="statut" class="cool"/>
+					</div>-->
+					<div>
+						<label for="societe">Société</label>
+						<input id="societe" type="Text" name="societe" class="cool"/>
+					</div>
+					
+					<div>
+						<label for="mail">Adresse Mail</label>
+						<input id="mail" type="text" name="mail" class="cool"/>
+					</div>
+					
+					<div>
+						<label for="tel">Téléphone</label>
+						<input id="tel" type="text" name="tel" class="cool"/>
+					</div>
+					
+					<div>
+						<label for="comments">Commentaires</label>
+						<input id="comments " type="text" name="comments" class="cool"/>
+					</div>
+					<!--<input type="hidden" value="951847623BY123" name="token"/>
+                    <input type="hidden" value="jacobciny@live.be" name="monmail"/>-->
+					<button type="button" value="Envoyer" >Envoyer</button>
+					
+				</form>
+		</div>
+		<footer>
+			<p><img src="../images/IndexImg/FemmeIcone1.png" style="width:30px; height:30px;"> Cindy Jacob <img src="../images/IndexImg/Mail.png" style="width:30px; height:30px;"><a href="mailto:jacobcindy@live.be"> jacobcindy@live.be <img src="../images/IndexImg/SocialNetwork.png" style="width:30px; height:30px;"><a href= "https://be.linkedin.com/in/cindy-jacob-732250a5"> Linkedin</a>
+			<img src="../images/IndexImg/pdfIcone.png" style="width:30px; height:30px;"><a href="./CindyJACOB.pdf"> Cv</a></p>
+		</footer>
+
+		<script type="text/javascript">
+			$('input').on('focusin', function() {
+ 			$(this).parent().find('label').addClass('active');
+			});
+
+			$('input').on('focusout', function() {
+  			if (!this.value) {
+    		$(this).parent().find('label').removeClass('active');
+  			}
+			});
+		</script>
+
+	</body>
+</html>
